@@ -1,0 +1,3343 @@
+<html lang="ru-RU" class="desktop landscape">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Меры поддержки</title>
+    <link
+      rel="stylesheet"
+      href="https://gisp.gov.ru/gisplk/header_distv2/styles.css"
+    />
+    <link
+      href="https://gisp.gov.ru/navigator-measures/assets/7d21d0e8/css/bootstrap.min.css?v=1620656302"
+      rel="stylesheet"
+    />
+    <link
+      href="https://gisp.gov.ru/navigator-measures/static/gisp/css/icon.css?v=1620656255"
+      rel="stylesheet"
+    />
+    <link
+      href="https://gisp.gov.ru/navigator-measures/static/gisp/css/slick.css?v=1620656255"
+      rel="stylesheet"
+    />
+    <link
+      href="https://gisp.gov.ru/navigator-measures/static/gisp/css/main.css?v=1620656255"
+      rel="stylesheet"
+    />
+    <link
+      href="https://gisp.gov.ru/navigator-measures/static/gisp/css/dev.css?v=1620656255"
+      rel="stylesheet"
+    />
+    <link
+      href="https://gisp.gov.ru/navigator-measures/assets/caebcb91/css/bootstrap-year-calendar.min.css?v=1620656302"
+      rel="stylesheet"
+    />
+    <link
+      href="https://gisp.gov.ru/navigator-measures/assets/c866cda0/select2_measure.css?v=1620656302"
+      rel="stylesheet"
+    />
+    <link
+      href="https://gisp.gov.ru/navigator-measures/assets/c866cda0/select2/select2totree.css?v=1620656302"
+      rel="stylesheet"
+    />
+    <link
+      href="https://gisp.gov.ru/navigator-measures/assets/c866cda0/perfect-scrollbar.css?v=1620656302"
+      rel="stylesheet"
+    />
+    <link
+      href="https://gisp.gov.ru/navigator-measures/assets/c866cda0/slick.css?v=1620656302"
+      rel="stylesheet"
+    />
+    <link
+      href="https://gisp.gov.ru/navigator-measures/assets/c866cda0/popover.css?v=1620656302"
+      rel="stylesheet"
+    />
+    <link
+      href="https://gisp.gov.ru/navigator-measures/assets/c866cda0/greed-fix.css?v=1620656302"
+      rel="stylesheet"
+    />
+    <link
+      href="https://gisp.gov.ru/navigator-measures/assets/c866cda0/main-measure.css?v=1620656302"
+      rel="stylesheet"
+    />
+    <link
+      href="https://gisp.gov.ru/navigator-measures/assets/c866cda0/compare/css/compare.css?v=1620656302"
+      rel="stylesheet"
+    />
+    <link
+      href="https://gisp.gov.ru/navigator-measures/assets/c866cda0/select-custom.css?v=1620656302"
+      rel="stylesheet"
+    />
+    <link
+      href="https://gisp.gov.ru/navigator-measures/assets/c866cda0/zebra/css/bootstrap/zebra_datepicker.min.css?v=1620656302"
+      rel="stylesheet"
+    />
+    <link
+      href="https://gisp.gov.ru/navigator-measures/assets/b57b20b/css/select2.min.css?v=1620656302"
+      rel="stylesheet"
+    />
+    <link
+      href="https://gisp.gov.ru/navigator-measures/assets/b57b20b/css/select2-addl.min.css?v=1620656302"
+      rel="stylesheet"
+    />
+    <link
+      href="https://gisp.gov.ru/navigator-measures/assets/b57b20b/css/select2-krajee.min.css?v=1620656302"
+      rel="stylesheet"
+    />
+    <link
+      href="https://gisp.gov.ru/navigator-measures/assets/65bcbcf4/css/kv-widgets.min.css?v=1620656302"
+      rel="stylesheet"
+    />
+    <script>
+      var s2options_14ae84a6 = {
+        themeCss: ".select2-container--krajee",
+        sizeCss: "",
+        doReset: false,
+        doToggle: false,
+        doOrder: false,
+      };
+      window.select2_cb0575ac = {
+        theme: "krajee",
+        allowClear: true,
+        minimumInputLength: 2,
+        language: {
+          errorLoading: function () {
+            return "Пожалуйста, подождите ...";
+          },
+          inputTooShort: function () {
+            return "Введите 2 или более символа";
+          },
+          searching: function () {
+            return "Идет поиск...";
+          },
+          noResults: function () {
+            return "Ничего не найдено";
+          },
+        },
+        ajax: {
+          url: "\/navigator-measures\/ru-RU\/measures\/directory\/get-okveds-list",
+          dataType: "json",
+          data: function (params) {
+            return { q: params.term };
+          },
+        },
+        escapeMarkup: function (markup) {
+          return markup;
+        },
+        templateResult: function (data) {
+          return data.text;
+        },
+        templateSelection: function (data) {
+          return data.text;
+        },
+        width: "100%",
+        placeholder: "Код ОКВЭД 2",
+      };
+
+      var inputmask_2516c762 = { mask: "9999-99-99" };
+    </script>
+    <style type="text/css">
+      span.im-caret {
+        -webkit-animation: 1s blink step-end infinite;
+        animation: 1s blink step-end infinite;
+      }
+
+      @keyframes blink {
+        from,
+        to {
+          border-right-color: black;
+        }
+        50% {
+          border-right-color: transparent;
+        }
+      }
+
+      @-webkit-keyframes blink {
+        from,
+        to {
+          border-right-color: black;
+        }
+        50% {
+          border-right-color: transparent;
+        }
+      }
+
+      span.im-static {
+        color: grey;
+      }
+
+      div.im-colormask {
+        display: inline-block;
+        border-style: inset;
+        border-width: 2px;
+        -webkit-appearance: textfield;
+        -moz-appearance: textfield;
+        appearance: textfield;
+      }
+
+      div.im-colormask > input {
+        position: absolute;
+        display: inline-block;
+        background-color: transparent;
+        color: transparent;
+        -webkit-appearance: caret;
+        -moz-appearance: caret;
+        appearance: caret;
+        border-style: none;
+        left: 0; /*calculated*/
+      }
+
+      div.im-colormask > input:focus {
+        outline: none;
+      }
+
+      div.im-colormask > input::-moz-selection {
+        background: none;
+      }
+
+      div.im-colormask > input::selection {
+        background: none;
+      }
+      div.im-colormask > input::-moz-selection {
+        background: none;
+      }
+
+      div.im-colormask > div {
+        color: black;
+        display: inline-block;
+        width: 100px; /*calculated*/
+      }
+    </style>
+  </head>
+  <body>
+    <main class="main-page">
+      <!-- gisp/header -->
+      <section class="content">
+        <div class="container">
+          <div class="row">
+            <div
+              class="page-contaner wrap-pjax"
+              data-url-dates="/navigator-measures/ru-RU/measures/measure/get-request-dates"
+              data-url-frequency="/navigator-measures/ru-RU/measures/measure/set-frequency"
+            >
+              <div id="myform" data-pjax-container="" data-pjax-push-state="">
+                <form
+                  id="filter-form"
+                  action="/navigator-measures/ru-RU"
+                  method="get"
+                  data-pjax=""
+                >
+                  <div class="filter-block">
+                    <div class="container">
+                      <div class="fiter-search">
+                        <h1 class="page-head">Навигатор мер поддержки</h1>
+                        <div class="row">
+                          <div class="col-xs-12">
+                            <div class="search row">
+                              <div class="col-xs-8">
+                                <div class="search__input">
+                                  <div class="faild-wrap faild-icons">
+                                    <div class="form-group field-smallname">
+                                      <input
+                                        type="text"
+                                        id="smallname"
+                                        class="smallName"
+                                        name="smallName"
+                                        placeholder="Введите ключевые слова"
+                                        autocomplete="off"
+                                        data-url="/navigator-measures/ns/measure/measure/search?language=ru-RU"
+                                        data-keyword="/navigator-measures/ru-RU/measures/measure/keyword-save"
+                                        data="test"
+                                      />
+
+                                      <div class="help-block"></div>
+                                    </div>
+                                    <div class="faild-close"></div>
+                                    <div class="dropdown-icon">
+                                      <i
+                                        class="quest-icon dropdown-toggle"
+                                        data-toggle="dropdown"
+                                      ></i>
+                                      <div class="dropdown-menu">
+                                        <div class="block-head">
+                                          Чтобы получать более точные
+                                          результаты, вы можете использовать в
+                                          запросах специальные символы или
+                                          слова.
+                                        </div>
+                                        <div class="block-content">
+                                          <p>
+                                            Логические операторы:<br /><b
+                                              >«|», «-», «!», «=""».</b
+                                            >
+                                          </p>
+                                          <p><b>Пример использования:</b></p>
+                                          <p>
+                                            Оператор «<b>ИЛИ</b>»,<br />
+                                            пример «лизинг | конверсия»
+                                          </p>
+                                          <p>
+                                            Оператор «<b>НЕ</b>»,<br />
+                                            пример «лизинг -оборудования»,
+                                            «программа !лекарства»
+                                          </p>
+                                          <p>
+                                            Оператор «<b>Поиск фразы</b>»,<br />
+                                            пример «="купонного дохода"»
+                                          </p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="autocompleate">
+                                    <div class="helper">
+                                      Популярные запросы:
+                                      <span class="highlight">
+                                        <span
+                                          id="51"
+                                          data-text="субсидии"
+                                          class="pop-var"
+                                          >субсидии;</span
+                                        >
+                                        <span
+                                          id="18"
+                                          data-text="займы"
+                                          class="pop-var"
+                                          >займы;</span
+                                        >
+                                        <span
+                                          id="6"
+                                          data-text="лизинг"
+                                          class="pop-var"
+                                          >лизинг;</span
+                                        >
+                                        <span
+                                          id="9002"
+                                          data-text="1649"
+                                          class="pop-var"
+                                          >1649;</span
+                                        >
+                                        <span
+                                          id="1"
+                                          data-text="предоставление субсидий"
+                                          class="pop-var"
+                                          >предоставление субсидий;</span
+                                        >
+                                        <span
+                                          id="78"
+                                          data-text="ниокр"
+                                          class="pop-var"
+                                          >ниокр;</span
+                                        >
+                                        <span
+                                          id="634"
+                                          data-text="109"
+                                          class="pop-var"
+                                          >109;</span
+                                        >
+                                        <span
+                                          id="2841"
+                                          data-text="529"
+                                          class="pop-var"
+                                          >529;</span
+                                        >
+                                        <span
+                                          id="332"
+                                          data-text="кппк"
+                                          class="pop-var"
+                                          >кппк;</span
+                                        >
+                                        <span
+                                          id="155"
+                                          data-text="спик"
+                                          class="pop-var"
+                                          >спик</span
+                                        >
+                                      </span>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="col-xs-4">
+                                <div class="search__button">
+                                  <div class="search__button-group">
+                                    <button class="btn btn-base">Найти</button>
+                                    <button class="btn btn-reset btn-border">
+                                      Сбросить фильтр
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-xs-12">
+                            <div class="row fixed-inf sto">
+                              <div class="col-xs-3">
+                                <div class="fixed__input">
+                                  <div class="fixed__content faild-wrap">
+                                    <input
+                                      type="hidden"
+                                      name="territorialLevel"
+                                      value=""
+                                    />
+                                    <div
+                                      id="territoriallevel"
+                                      class="nwx-checkboxs"
+                                    >
+                                      <label class="nwx-che"
+                                        ><img
+                                          src="/navigator-measures/static/gisp/img/federal_icon.svg"
+                                          alt="" />
+                                        <div class="nwx-che__text">
+                                          Федеральные меры
+                                        </div>
+                                        <input
+                                          type="checkbox"
+                                          name="territorialLevel[]"
+                                          value="6403441" />
+                                        <div class="nwx-che__fake"></div
+                                      ></label>
+                                      <label class="nwx-che"
+                                        ><img
+                                          src="/navigator-measures/static/gisp/img/region_icon.svg"
+                                          alt="" />
+                                        <div class="nwx-che__text">
+                                          Региональные меры
+                                        </div>
+                                        <input
+                                          type="checkbox"
+                                          name="territorialLevel[]"
+                                          value="6403438" />
+                                        <div class="nwx-che__fake"></div
+                                      ></label>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-xs-3 fixed-inf__select">
+                                <div class="fixed__input">
+                                  <div class="fixed__content faild-wrap">
+                                    <div class="form-group field-regionid">
+                                      <input
+                                        type="hidden"
+                                        name="regionId"
+                                        value=""
+                                      /><select
+                                        id="regionid"
+                                        class="
+                                          chosen-base
+                                          selectpicker
+                                          selectPlace
+                                          select2-hidden-accessible
+                                        "
+                                        name="regionId[]"
+                                        multiple=""
+                                        size="4"
+                                        data-live-search="true"
+                                        placeholder="Регионы"
+                                        data-select2-id="regionid"
+                                        tabindex="-1"
+                                        aria-hidden="true"
+                                      >
+                                        <option value="3466">
+                                          Алтайский край
+                                        </option>
+                                        <option value="3467">
+                                          Амурская область
+                                        </option>
+                                        <option value="3468">
+                                          Архангельская область
+                                        </option>
+                                        <option value="3469">
+                                          Астраханская область
+                                        </option>
+                                        <option value="3471">
+                                          Белгородская область
+                                        </option>
+                                        <option value="3472">
+                                          Брянская область
+                                        </option>
+                                        <option value="3474">
+                                          Владимирская область
+                                        </option>
+                                        <option value="3475">
+                                          Волгоградская область
+                                        </option>
+                                        <option value="3476">
+                                          Вологодская область
+                                        </option>
+                                        <option value="3477">
+                                          Воронежская область
+                                        </option>
+                                        <option value="3479">
+                                          Еврейская автономная область
+                                        </option>
+                                        <option value="3480">
+                                          Забайкальский край
+                                        </option>
+                                        <option value="3481">
+                                          Ивановская область
+                                        </option>
+                                        <option value="3483">
+                                          Иркутская область
+                                        </option>
+                                        <option value="3484">
+                                          Кабардино-Балкарская Республика
+                                        </option>
+                                        <option value="3485">
+                                          Калининградская область
+                                        </option>
+                                        <option value="3487">
+                                          Калужская область
+                                        </option>
+                                        <option value="3488">
+                                          Камчатский край
+                                        </option>
+                                        <option value="3489">
+                                          Карачаево-Черкесская Республика
+                                        </option>
+                                        <option value="3491">
+                                          Кемеровская область-Кузбасс
+                                        </option>
+                                        <option value="3492">
+                                          Кировская область
+                                        </option>
+                                        <option value="3494">
+                                          Костромская область
+                                        </option>
+                                        <option value="3495">
+                                          Краснодарский край
+                                        </option>
+                                        <option value="3496">
+                                          Красноярский край
+                                        </option>
+                                        <option value="3498">
+                                          Курганская область
+                                        </option>
+                                        <option value="3499">
+                                          Курская область
+                                        </option>
+                                        <option value="3500">
+                                          Ленинградская область
+                                        </option>
+                                        <option value="3501">
+                                          Липецкая область
+                                        </option>
+                                        <option value="3502">
+                                          Магаданская область
+                                        </option>
+                                        <option value="3505">Москва</option>
+                                        <option value="3506">
+                                          Московская область
+                                        </option>
+                                        <option value="3507">
+                                          Мурманская область
+                                        </option>
+                                        <option value="3508">
+                                          Ненецкий автономный округ
+                                        </option>
+                                        <option value="3509">
+                                          Нижегородская область
+                                        </option>
+                                        <option value="3510">
+                                          Новгородская область
+                                        </option>
+                                        <option value="3511">
+                                          Новосибирская область
+                                        </option>
+                                        <option value="3512">
+                                          Омская область
+                                        </option>
+                                        <option value="3513">
+                                          Оренбургская область
+                                        </option>
+                                        <option value="3514">
+                                          Орловская область
+                                        </option>
+                                        <option value="3515">
+                                          Пензенская область
+                                        </option>
+                                        <option value="3516">
+                                          Пермский край
+                                        </option>
+                                        <option value="3517">
+                                          Приморский край
+                                        </option>
+                                        <option value="3518">
+                                          Псковская область
+                                        </option>
+                                        <option value="3464">
+                                          Республика Адыгея (Адыгея)
+                                        </option>
+                                        <option value="3465">
+                                          Республика Алтай
+                                        </option>
+                                        <option value="3470">
+                                          Республика Башкортостан
+                                        </option>
+                                        <option value="3473">
+                                          Республика Бурятия
+                                        </option>
+                                        <option value="3478">
+                                          Республика Дагестан
+                                        </option>
+                                        <option value="3482">
+                                          Республика Ингушетия
+                                        </option>
+                                        <option value="3486">
+                                          Республика Калмыкия
+                                        </option>
+                                        <option value="3490">
+                                          Республика Карелия
+                                        </option>
+                                        <option value="3493">
+                                          Республика Коми
+                                        </option>
+                                        <option value="3497">
+                                          Республика Крым
+                                        </option>
+                                        <option value="3503">
+                                          Республика Марий Эл
+                                        </option>
+                                        <option value="3504">
+                                          Республика Мордовия
+                                        </option>
+                                        <option value="3524">
+                                          Республика Саха (Якутия)
+                                        </option>
+                                        <option value="3528">
+                                          Республика Северная Осетия - Алания
+                                        </option>
+                                        <option value="3532">
+                                          Республика Татарстан (Татарстан)
+                                        </option>
+                                        <option value="3536">
+                                          Республика Тыва
+                                        </option>
+                                        <option value="3541">
+                                          Республика Хакасия
+                                        </option>
+                                        <option value="3519">
+                                          Ростовская область
+                                        </option>
+                                        <option value="3520">
+                                          Рязанская область
+                                        </option>
+                                        <option value="3521">
+                                          Самарская область
+                                        </option>
+                                        <option value="3522">
+                                          Санкт-Петербург
+                                        </option>
+                                        <option value="3523">
+                                          Саратовская область
+                                        </option>
+                                        <option value="3525">
+                                          Сахалинская область
+                                        </option>
+                                        <option value="3526">
+                                          Свердловская область
+                                        </option>
+                                        <option value="3527">
+                                          Севастополь
+                                        </option>
+                                        <option value="3529">
+                                          Смоленская область
+                                        </option>
+                                        <option value="3530">
+                                          Ставропольский край
+                                        </option>
+                                        <option value="3531">
+                                          Тамбовская область
+                                        </option>
+                                        <option value="3533">
+                                          Тверская область
+                                        </option>
+                                        <option value="3534">
+                                          Томская область
+                                        </option>
+                                        <option value="3535">
+                                          Тульская область
+                                        </option>
+                                        <option value="3537">
+                                          Тюменская область
+                                        </option>
+                                        <option value="3538">
+                                          Удмуртская Республика
+                                        </option>
+                                        <option value="3539">
+                                          Ульяновская область
+                                        </option>
+                                        <option value="3540">
+                                          Хабаровский край
+                                        </option>
+                                        <option value="3542">
+                                          Ханты-Мансийский автономный округ -
+                                          Югра
+                                        </option>
+                                        <option value="3543">
+                                          Челябинская область
+                                        </option>
+                                        <option value="3544">
+                                          Чеченская Республика
+                                        </option>
+                                        <option value="3545">
+                                          Чувашская Республика - Чувашия
+                                        </option>
+                                        <option value="3546">
+                                          Чукотский автономный округ
+                                        </option>
+                                        <option value="3547">
+                                          Ямало-Ненецкий автономный округ
+                                        </option>
+                                        <option value="3548">
+                                          Ярославская область
+                                        </option></select
+                                      ><span
+                                        class="
+                                          select2
+                                          select2-container
+                                          select2-container--default
+                                        "
+                                        dir="ltr"
+                                        data-select2-id="1"
+                                        style="width: 380.766px"
+                                        ><span
+                                          class="dropdown-wrapper"
+                                          aria-hidden="true"
+                                        ></span
+                                      ></span>
+
+                                      <div class="help-block"></div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-xs-12">
+                            <div class="row zox">
+                              <div class="col-xs-6 zox__search">
+                                <div class="fxsd">
+                                  <div
+                                    class="fixed__input fixed__hk fixed__one"
+                                  >
+                                    <div class="fixed__content faild-wrap">
+                                      <div class="form-group field-applianceid">
+                                        <input
+                                          type="hidden"
+                                          name="applianceId"
+                                          value=""
+                                        /><select
+                                          id="applianceid"
+                                          class="
+                                            chosen-base
+                                            selectpicker
+                                            selectPlace
+                                            select2-hidden-accessible
+                                          "
+                                          name="applianceId[]"
+                                          multiple=""
+                                          size="4"
+                                          data-live-search="true"
+                                          placeholder="Отрасли"
+                                          data-select2-id="applianceid"
+                                          tabindex="-1"
+                                          aria-hidden="true"
+                                        >
+                                          <option value="245">
+                                            Авиационная промышленность
+                                          </option>
+                                          <option value="246">
+                                            Автомобильная промышленность
+                                          </option>
+                                          <option value="263">
+                                            Внутренняя торговля
+                                          </option>
+                                          <option value="56209">
+                                            Добыча и обработка драгоценных
+                                            металлов и драгоценных камней
+                                          </option>
+                                          <option value="56210">
+                                            Железнодорожная промышленность
+                                          </option>
+                                          <option value="846">
+                                            Кабельная промышленность
+                                          </option>
+                                          <option value="249">
+                                            Легкая промышленность
+                                          </option>
+                                          <option value="250">
+                                            Лесопромышленный комплекс
+                                          </option>
+                                          <option value="22377">
+                                            Машиностроение для легкой
+                                            промышленности
+                                          </option>
+                                          <option value="251">
+                                            Машиностроение для пищевой и
+                                            перерабатывающей промышленности
+                                          </option>
+                                          <option value="252">
+                                            Медицинская промышленность
+                                          </option>
+                                          <option value="349">
+                                            Народные художественные промыслы
+                                          </option>
+                                          <option value="56539">
+                                            Не определено / не указано
+                                          </option>
+                                          <option value="254">
+                                            Нефтегазовое машиностроение
+                                          </option>
+                                          <option value="56541">
+                                            Пищевая промышленность
+                                          </option>
+                                          <option value="56256">
+                                            Пищевая промышленность (в части
+                                            промышленных биотехнологий)
+                                          </option>
+                                          <option value="352">
+                                            Производство игрушек и детских
+                                            товаров
+                                          </option>
+                                          <option value="56212">
+                                            Производство музыкального
+                                            оборудования
+                                          </option>
+                                          <option value="56213">
+                                            Производство
+                                            парфюмерно-косметической продукции
+                                          </option>
+                                          <option value="56214">
+                                            Производство социально значимых
+                                            товаров
+                                          </option>
+                                          <option value="55801">
+                                            Производство спортивных товаров
+                                          </option>
+                                          <option value="256">
+                                            Промышленность боеприпасов и
+                                            спецхимии
+                                          </option>
+                                          <option value="56215">
+                                            Промышленность композитных
+                                            материалов и изделий из них
+                                          </option>
+                                          <option value="22380">
+                                            Промышленность обычных вооружений
+                                          </option>
+                                          <option value="22379">
+                                            Промышленность переработки отходов
+                                            производства и потребления
+                                          </option>
+                                          <option value="56216">
+                                            Промышленность строительных и
+                                            нерудных материалов
+                                          </option>
+                                          <option value="258">
+                                            Радиоэлектронная промышленность
+                                          </option>
+                                          <option value="56540">
+                                            Разработка ПО и цифровые платформы
+                                          </option>
+                                          <option value="56013">
+                                            Сельское хозяйство
+                                          </option>
+                                          <option value="259">
+                                            Сельскохозяйственное машиностроение
+                                          </option>
+                                          <option value="56012">
+                                            Социальная сфера
+                                          </option>
+                                          <option value="260">
+                                            Станкоинструментальная
+                                            промышленность
+                                          </option>
+                                          <option value="261">
+                                            Строительно-дорожное и коммунальное
+                                            машиностроение
+                                          </option>
+                                          <option value="262">
+                                            Судостроительная промышленность
+                                          </option>
+                                          <option value="264">
+                                            Транспортное машиностроение
+                                          </option>
+                                          <option value="265">
+                                            Тяжелое машиностроение
+                                          </option>
+                                          <option value="266">
+                                            Фармацевтическая промышленность
+                                          </option>
+                                          <option value="267">
+                                            Химическая промышленность
+                                          </option>
+                                          <option value="1314">
+                                            Цветная металлургия, промышленность
+                                            редких и редкоземельных металлов
+                                          </option>
+                                          <option value="1315">
+                                            Черная металлургия, трубная
+                                            промышленность и металлоконструкции
+                                          </option>
+                                          <option value="56244">
+                                            Электронное музыкальное оборудование
+                                          </option>
+                                          <option value="24627">
+                                            Электротехническая промышленность
+                                          </option>
+                                          <option value="268">
+                                            Энергетическое машиностроение
+                                          </option></select
+                                        ><span
+                                          class="
+                                            select2
+                                            select2-container
+                                            select2-container--default
+                                          "
+                                          dir="ltr"
+                                          data-select2-id="2"
+                                          style="width: 631.953px"
+                                          ><span
+                                            class="dropdown-wrapper"
+                                            aria-hidden="true"
+                                          ></span
+                                        ></span>
+
+                                        <div class="help-block"></div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div
+                                    class="fixed__input fixed__hk fixed__two"
+                                  >
+                                    <div class="fixed__content faild-wrap">
+                                      <div class="form-group field-okvedid">
+                                        <input
+                                          type="hidden"
+                                          name="okvedId"
+                                          value=""
+                                        /><select
+                                          id="okvedid"
+                                          class="
+                                            select-faild select-okved
+                                            form-control
+                                            select2-hidden-accessible
+                                          "
+                                          name="okvedId[]"
+                                          multiple=""
+                                          size="4"
+                                          title="Начните вводить ключевые слова в свободной форме и выберите необходимое значение из списка"
+                                          data-s2-options="s2options_14ae84a6"
+                                          data-krajee-select2="select2_cb0575ac"
+                                          style="display: none"
+                                          data-select2-id="okvedid"
+                                          tabindex="-1"
+                                          aria-hidden="true"
+                                        ></select
+                                        ><span
+                                          class="
+                                            select2
+                                            select2-container
+                                            select2-container--krajee
+                                          "
+                                          dir="ltr"
+                                          data-select2-id="7"
+                                          style="width: 100%"
+                                          ><span class="selection"
+                                            ><span
+                                              class="
+                                                select2-selection
+                                                select2-selection--multiple
+                                              "
+                                              role="combobox"
+                                              aria-haspopup="true"
+                                              aria-expanded="false"
+                                              title="Начните вводить ключевые слова в свободной форме и выберите необходимое значение из списка"
+                                              tabindex="-1"
+                                              ><ul
+                                                class="
+                                                  select2-selection__rendered
+                                                "
+                                              >
+                                                <li
+                                                  class="
+                                                    select2-search
+                                                    select2-search--inline
+                                                  "
+                                                >
+                                                  <input
+                                                    class="
+                                                      select2-search__field
+                                                    "
+                                                    type="search"
+                                                    tabindex="0"
+                                                    autocomplete="off"
+                                                    autocorrect="off"
+                                                    autocapitalize="none"
+                                                    spellcheck="false"
+                                                    role="textbox"
+                                                    aria-autocomplete="list"
+                                                    placeholder="Код ОКВЭД 2"
+                                                    style="width: 0px"
+                                                  />
+                                                </li></ul></span></span
+                                          ><span
+                                            class="dropdown-wrapper"
+                                            aria-hidden="true"
+                                          ></span
+                                        ></span>
+
+                                        <div class="help-block"></div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-xs-3 zox__button">
+                                <div class="fixed__input">
+                                  <a
+                                    href="javascript:;"
+                                    class="btn btn-base js-toggle-filter button"
+                                  >
+                                    <div class="button__icon">
+                                      <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 24 24"
+                                      >
+                                        <g>
+                                          <path
+                                            fill="none"
+                                            d="M0 0h24v24H0z"
+                                          ></path>
+                                          <path
+                                            d="M6.17 18a3.001 3.001 0 0 1 5.66 0H22v2H11.83a3.001 3.001 0 0 1-5.66 0H2v-2h4.17zm6-7a3.001 3.001 0 0 1 5.66 0H22v2h-4.17a3.001 3.001 0 0 1-5.66 0H2v-2h10.17zm-6-7a3.001 3.001 0 0 1 5.66 0H22v2H11.83a3.001 3.001 0 0 1-5.66 0H2V4h4.17z"
+                                          ></path>
+                                        </g>
+                                      </svg>
+                                    </div>
+                                    Расширенный поиск
+                                    <div class="button__circle">0</div>
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-xs-12">
+                            <div class="fixed__template">
+                              <div class="fixed">
+                                <div class="fixed__inner">
+                                  <div class="fixed__row row">
+                                    <div class="col-xs-3">
+                                      <div class="fixed__input">
+                                        <div class="fixed__header">
+                                          Тип меры поддержки
+                                        </div>
+                                        <div class="fixed__content faild-wrap">
+                                          <div
+                                            class="
+                                              form-group
+                                              field-classificatormera
+                                            "
+                                          >
+                                            <input
+                                              type="hidden"
+                                              name="classificatorMera"
+                                              value=""
+                                            /><select
+                                              id="classificatormera"
+                                              class="
+                                                chosen-base
+                                                selectpicker
+                                                selectPlace
+                                                select2-hidden-accessible
+                                              "
+                                              name="classificatorMera[]"
+                                              multiple=""
+                                              size="4"
+                                              data-live-search="true"
+                                              data-directory="classificator"
+                                              placeholder="Тип меры поддержки"
+                                              data-select2-id="classificatormera"
+                                              tabindex="-1"
+                                              aria-hidden="true"
+                                            >
+                                              <option value="6627781">
+                                                Финансовая поддержка
+                                              </option>
+                                              <option value="6627780">
+                                                Регуляторная поддержка
+                                                (налоговые, таможенные,
+                                                инвестиционные льготы и т.д.)
+                                              </option>
+                                              <option value="10525011">
+                                                Поддержка внешнеэкономической
+                                                деятельности
+                                              </option>
+                                              <option value="10525008">
+                                                Имущественная поддержка
+                                              </option>
+                                              <option value="10525010">
+                                                Образовательная поддержка
+                                              </option>
+                                              <option value="10525009">
+                                                Консультационная
+                                                (информационная) поддержка
+                                              </option></select
+                                            ><span
+                                              class="
+                                                select2
+                                                select2-container
+                                                select2-container--default
+                                              "
+                                              dir="ltr"
+                                              data-select2-id="3"
+                                              style="width: 673.297px"
+                                              ><span class="selection"
+                                                ><span
+                                                  class="
+                                                    select2-selection
+                                                    select2-selection--multiple
+                                                  "
+                                                  role="combobox"
+                                                  aria-haspopup="true"
+                                                  aria-expanded="false"
+                                                  tabindex="-1"
+                                                  ><ul
+                                                    class="
+                                                      select2-selection__rendered
+                                                    "
+                                                  >
+                                                    <li
+                                                      class="
+                                                        select2-search
+                                                        select2-search--inline
+                                                      "
+                                                    >
+                                                      <input
+                                                        class="
+                                                          select2-search__field
+                                                        "
+                                                        type="search"
+                                                        tabindex="0"
+                                                        autocomplete="off"
+                                                        autocorrect="off"
+                                                        autocapitalize="none"
+                                                        spellcheck="false"
+                                                        role="textbox"
+                                                        aria-autocomplete="list"
+                                                        placeholder=""
+                                                        style="width: 0.75em"
+                                                      />
+                                                    </li></ul></span></span
+                                              ><span
+                                                class="dropdown-wrapper"
+                                                aria-hidden="true"
+                                              ></span
+                                            ></span>
+
+                                            <div class="help-block"></div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="col-xs-3">
+                                      <div class="fixed__input">
+                                        <div class="fixed__header">
+                                          Федеральный округ
+                                        </div>
+                                        <div class="fixed__content faild-wrap">
+                                          <div class="form-group field-okrugid">
+                                            <input
+                                              type="hidden"
+                                              name="okrugId"
+                                              value=""
+                                            /><select
+                                              id="okrugid"
+                                              class="
+                                                chosen-base
+                                                selectpicker
+                                                selectPlace
+                                                select2-hidden-accessible
+                                              "
+                                              name="okrugId[]"
+                                              multiple=""
+                                              size="4"
+                                              data-live-search="true"
+                                              data-directory="okrug"
+                                              placeholder="Федеральный округ"
+                                              data-select2-id="okrugid"
+                                              tabindex="-1"
+                                              aria-hidden="true"
+                                            >
+                                              <option value="6403522">
+                                                Дальневосточный федеральный
+                                                округ
+                                              </option>
+                                              <option value="6403537">
+                                                Приволжский федеральный округ
+                                              </option>
+                                              <option value="6403510">
+                                                Северо-Западный федеральный
+                                                округ
+                                              </option>
+                                              <option value="6403540">
+                                                Северо-Кавказский федеральный
+                                                округ
+                                              </option>
+                                              <option value="6403528">
+                                                Сибирский федеральный округ
+                                              </option>
+                                              <option value="6403534">
+                                                Уральский федеральный округ
+                                              </option>
+                                              <option value="6403486">
+                                                Центральный федеральный округ
+                                              </option>
+                                              <option value="6403507">
+                                                Южный федеральный округ
+                                              </option></select
+                                            ><span
+                                              class="
+                                                select2
+                                                select2-container
+                                                select2-container--default
+                                              "
+                                              dir="ltr"
+                                              data-select2-id="4"
+                                              style="width: 333.812px"
+                                              ><span class="selection"
+                                                ><span
+                                                  class="
+                                                    select2-selection
+                                                    select2-selection--multiple
+                                                  "
+                                                  role="combobox"
+                                                  aria-haspopup="true"
+                                                  aria-expanded="false"
+                                                  tabindex="-1"
+                                                  ><ul
+                                                    class="
+                                                      select2-selection__rendered
+                                                    "
+                                                  >
+                                                    <li
+                                                      class="
+                                                        select2-search
+                                                        select2-search--inline
+                                                      "
+                                                    >
+                                                      <input
+                                                        class="
+                                                          select2-search__field
+                                                        "
+                                                        type="search"
+                                                        tabindex="0"
+                                                        autocomplete="off"
+                                                        autocorrect="off"
+                                                        autocapitalize="none"
+                                                        spellcheck="false"
+                                                        role="textbox"
+                                                        aria-autocomplete="list"
+                                                        placeholder=""
+                                                        style="width: 0.75em"
+                                                      />
+                                                    </li></ul></span></span
+                                              ><span
+                                                class="dropdown-wrapper"
+                                                aria-hidden="true"
+                                              ></span
+                                            ></span>
+
+                                            <div class="help-block"></div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="col-xs-6">
+                                      <div class="fixed__input">
+                                        <div class="fixed__header modal-lable">
+                                          Проблемы предприятия
+                                          <span
+                                            class="info-icon open-modal-info"
+                                            >?</span
+                                          >
+                                          <div class="modal-info">
+                                            <div class="modal-head">
+                                              Перечень проблем предприятия
+                                              <i
+                                                class="
+                                                  icon-close
+                                                  close-modal-info
+                                                "
+                                              ></i>
+                                            </div>
+                                            <div class="modal-scroll">
+                                              <div class="collapse-wrap">
+                                                <div
+                                                  class="modal-collapse"
+                                                  data-toggle="collapse"
+                                                  data-target="#problem1"
+                                                >
+                                                  <img
+                                                    src="/navigator-measures/static/gisp/img/select-icon/seach.svg"
+                                                  />Недостаток доступного
+                                                  инвестиционного кредитования<i
+                                                    class="icon-plus"
+                                                  ></i>
+                                                </div>
+                                                <div
+                                                  id="problem1"
+                                                  class="
+                                                    collapse
+                                                    modal-collapse-body
+                                                  "
+                                                >
+                                                  <ul>
+                                                    <li>
+                                                      Субсидирование процентной
+                                                      ставки по инвестиционным
+                                                      кредитам
+                                                    </li>
+                                                    <li>
+                                                      Предоставление
+                                                      государственных гарантий
+                                                    </li>
+                                                    <li>
+                                                      Возмещение затрат по
+                                                      оплате стоимости
+                                                      вознаграждения по
+                                                      договорам поручительства
+                                                    </li>
+                                                  </ul>
+                                                </div>
+                                              </div>
+                                              <div class="collapse-wrap">
+                                                <div
+                                                  class="modal-collapse"
+                                                  data-toggle="collapse"
+                                                  data-target="#problem2"
+                                                >
+                                                  <img
+                                                    src="/navigator-measures/static/gisp/img/select-icon/rotate.svg"
+                                                  />Нехватка оборотных средств<i
+                                                    class="icon-plus"
+                                                  ></i>
+                                                </div>
+                                                <div
+                                                  id="problem2"
+                                                  class="
+                                                    collapse
+                                                    modal-collapse-body
+                                                  "
+                                                >
+                                                  <ul>
+                                                    <li>
+                                                      Субсидирование процентной
+                                                      ставки на создание
+                                                      межсезонных запасов сырья
+                                                    </li>
+                                                    <li>
+                                                      Субсидирование
+                                                      приобретения расходных
+                                                      материалов, сырья и
+                                                      комплектующих
+                                                    </li>
+                                                    <li>
+                                                      Субсидирование затрат на
+                                                      пополнение оборотных
+                                                      средств и на
+                                                      финансирование текущей
+                                                      производственной
+                                                      деятельности
+                                                    </li>
+                                                  </ul>
+                                                </div>
+                                              </div>
+                                              <div class="collapse-wrap">
+                                                <div
+                                                  class="modal-collapse"
+                                                  data-toggle="collapse"
+                                                  data-target="#problem3"
+                                                >
+                                                  <img
+                                                    src="/navigator-measures/static/gisp/img/select-icon/money.svg"
+                                                  />Высокие затраты на создание
+                                                  новых производств и их
+                                                  развитие<i
+                                                    class="icon-plus"
+                                                  ></i>
+                                                </div>
+                                                <div
+                                                  id="problem3"
+                                                  class="
+                                                    collapse
+                                                    modal-collapse-body
+                                                  "
+                                                >
+                                                  <ul>
+                                                    <li>
+                                                      Субсидирование аренды
+                                                      производственных площадей
+                                                    </li>
+                                                    <li>
+                                                      Субсидирование
+                                                      приобретения или
+                                                      долгосрочной аренды
+                                                      земельных участков под
+                                                      создание новых
+                                                      производственных мощностей
+                                                    </li>
+                                                    <li>
+                                                      Субсидирование
+                                                      строительства
+                                                      производственных зданий и
+                                                      сооружений
+                                                    </li>
+                                                    <li>
+                                                      Субсидирование проведения
+                                                      технических испытаний,
+                                                      токсикологических
+                                                      исследований и испытаний
+                                                      продукции
+                                                    </li>
+                                                    <li>
+                                                      Субсидирование части
+                                                      затрат на подготовку
+                                                      проектно-сметной
+                                                      документации
+                                                    </li>
+                                                    <li>
+                                                      Субсидии на возмещение
+                                                      части затрат на
+                                                      транспортировку продукции
+                                                    </li>
+                                                  </ul>
+                                                </div>
+                                              </div>
+                                              <div class="collapse-wrap">
+                                                <div
+                                                  class="modal-collapse"
+                                                  data-toggle="collapse"
+                                                  data-target="#problem4"
+                                                >
+                                                  <img
+                                                    src="/navigator-measures/static/gisp/img/select-icon/chat.svg"
+                                                  />Высокий уровень
+                                                  налогообложения<i
+                                                    class="icon-plus"
+                                                  ></i>
+                                                </div>
+                                                <div
+                                                  id="problem4"
+                                                  class="
+                                                    collapse
+                                                    modal-collapse-body
+                                                  "
+                                                >
+                                                  <ul>
+                                                    <li>
+                                                      Снижение (обнуление)
+                                                      ставки отдельных видов
+                                                      налога для отдельных
+                                                      категорий
+                                                    </li>
+                                                    <li>
+                                                      Предоставление
+                                                      инвестиционного налогового
+                                                      кредита
+                                                    </li>
+                                                    <li>
+                                                      Предоставление налоговых
+                                                      льгот
+                                                    </li>
+                                                    <li>
+                                                      Предоставление особого
+                                                      статуса и соответствующих
+                                                      налоговых льгот (ПИПы,
+                                                      СПИК)
+                                                    </li>
+                                                    <li>
+                                                      Субсидирование ускоренной
+                                                      амортизации
+                                                      высокотехнологичного
+                                                      оборудования российского
+                                                      производства
+                                                    </li>
+                                                  </ul>
+                                                </div>
+                                              </div>
+                                              <div class="collapse-wrap">
+                                                <div
+                                                  class="modal-collapse"
+                                                  data-toggle="collapse"
+                                                  data-target="#problem5"
+                                                >
+                                                  <img
+                                                    src="/navigator-measures/static/gisp/img/select-icon/team.svg"
+                                                  />Кадровые проблемы<i
+                                                    class="icon-plus"
+                                                  ></i>
+                                                </div>
+                                                <div
+                                                  id="problem5"
+                                                  class="
+                                                    collapse
+                                                    modal-collapse-body
+                                                  "
+                                                >
+                                                  <ul>
+                                                    <li>
+                                                      Субсидии на содержание
+                                                      рабочих мест (з/п, налоги,
+                                                      соц. страх и др.)
+                                                    </li>
+                                                    <li>
+                                                      Субсидии на переподготовку
+                                                      кадров
+                                                    </li>
+                                                    <li>
+                                                      Образовательные программы
+                                                      (институты развития)
+                                                    </li>
+                                                  </ul>
+                                                </div>
+                                              </div>
+                                              <div class="collapse-wrap">
+                                                <div class="modal-collapse">
+                                                  <img
+                                                    src="/navigator-measures/static/gisp/img/select-icon/operation.svg"
+                                                  />Проблемы в работе
+                                                  предприятия, связанные с
+                                                  операционной деятельностью
+                                                  (просроченная задолженность,
+                                                  разрыв платежного оборота,
+                                                  персонал)<i
+                                                    class="icon-plus"
+                                                  ></i>
+                                                </div>
+                                              </div>
+                                              <div class="collapse-wrap">
+                                                <div
+                                                  class="modal-collapse"
+                                                  data-toggle="collapse"
+                                                  data-target="#problem6"
+                                                >
+                                                  <img
+                                                    src="/navigator-measures/static/gisp/img/select-icon/tech.svg"
+                                                  />Необходимость проведения
+                                                  НИОКР, внедрения новых
+                                                  технологий, освоение
+                                                  высокотехнологичной
+                                                  продукции<i
+                                                    class="icon-plus"
+                                                  ></i>
+                                                </div>
+                                                <div
+                                                  id="problem6"
+                                                  class="
+                                                    collapse
+                                                    modal-collapse-body
+                                                  "
+                                                >
+                                                  <ul>
+                                                    <li>
+                                                      Субсидирование проведения
+                                                      научно-исследовательских и
+                                                      опытно-конструкторских
+                                                      работ
+                                                    </li>
+                                                    <li>
+                                                      Субсидирование создания
+                                                      инновационной продукции и
+                                                      технологий,
+                                                      конкурентоспособных на
+                                                      международных рынках
+                                                    </li>
+                                                    <li>
+                                                      Субсидии на развитие
+                                                      промышленного производства
+                                                      в направлении увеличения
+                                                      выпуска
+                                                      высокотехнологичной
+                                                      продукции
+                                                    </li>
+                                                    <li>
+                                                      Субсидирование увеличения
+                                                      роста производительности
+                                                      труда за счет
+                                                      использования передовых
+                                                      технологий и современного
+                                                      оборудования и созданию
+                                                      высокопроизводительных
+                                                      рабочих мест
+                                                    </li>
+                                                    <li>
+                                                      Субсидии на создание
+                                                      перспективных
+                                                      производственных
+                                                      технологий
+                                                    </li>
+                                                    <li>
+                                                      Субсидии на приобретение
+                                                      программного обеспечения
+                                                    </li>
+                                                  </ul>
+                                                </div>
+                                              </div>
+                                              <div class="collapse-wrap">
+                                                <div
+                                                  class="modal-collapse"
+                                                  data-toggle="collapse"
+                                                  data-target="#problem7"
+                                                >
+                                                  <img
+                                                    src="/navigator-measures/static/gisp/img/select-icon/config.svg"
+                                                  />Необходимость модернизации
+                                                  производства для выпуска
+                                                  конкурентоспособной
+                                                  продукции<i
+                                                    class="icon-plus"
+                                                  ></i>
+                                                </div>
+                                                <div
+                                                  id="problem7"
+                                                  class="
+                                                    collapse
+                                                    modal-collapse-body
+                                                  "
+                                                >
+                                                  <ul>
+                                                    <li>
+                                                      Субсидии на приобретение и
+                                                      (или) лизинг оборудования
+                                                      для увеличения
+                                                      производства
+                                                      конкурентоспособной
+                                                      продукции
+                                                    </li>
+                                                    <li>
+                                                      Субсидии на возмещение
+                                                      части затрат, понесенных
+                                                      на модернизацию и
+                                                      техническое перевооружение
+                                                    </li>
+                                                    <li>
+                                                      Субсидии на переподготовку
+                                                      персонала, занятого на
+                                                      высокотехнологичном
+                                                      оборудовании
+                                                    </li>
+                                                  </ul>
+                                                </div>
+                                              </div>
+                                              <div class="collapse-wrap">
+                                                <div
+                                                  class="modal-collapse"
+                                                  data-toggle="collapse"
+                                                  data-target="#problem8"
+                                                >
+                                                  <img
+                                                    src="/navigator-measures/static/gisp/img/select-icon/country.svg"
+                                                  />Снижающийся спрос на
+                                                  внутреннем рынке,
+                                                  конкурирующий импорт<i
+                                                    class="icon-plus"
+                                                  ></i>
+                                                </div>
+                                                <div
+                                                  id="problem8"
+                                                  class="
+                                                    collapse
+                                                    modal-collapse-body
+                                                  "
+                                                >
+                                                  <ul>
+                                                    <li>
+                                                      Субсидирование
+                                                      производства отдельных
+                                                      (приоритетных) видов
+                                                      продукции
+                                                    </li>
+                                                    <li>
+                                                      Субсидия на возмещение
+                                                      части затрат (в размере
+                                                      скидки)
+                                                    </li>
+                                                  </ul>
+                                                </div>
+                                              </div>
+                                              <div class="collapse-wrap">
+                                                <div
+                                                  class="modal-collapse"
+                                                  data-toggle="collapse"
+                                                  data-target="#problem9"
+                                                >
+                                                  <img
+                                                    src="/navigator-measures/static/gisp/img/select-icon/world.svg"
+                                                  />Выход на новые экспортные
+                                                  рынки сбыта<i
+                                                    class="icon-plus"
+                                                  ></i>
+                                                </div>
+                                                <div
+                                                  id="problem9"
+                                                  class="
+                                                    collapse
+                                                    modal-collapse-body
+                                                  "
+                                                >
+                                                  <ul>
+                                                    <li>
+                                                      Субсидии на компенсацию
+                                                      затрат экспортеров
+                                                      российской продукции на
+                                                      сертификацию на внешних
+                                                      рынках
+                                                    </li>
+                                                    <li>
+                                                      Субсидию на компенсацию
+                                                      затрат российским
+                                                      производителям на
+                                                      регистрацию объектов
+                                                      интеллектуальной
+                                                      собственности за рубежом
+                                                    </li>
+                                                    <li>
+                                                      Субсидирование обеспечения
+                                                      участия в международных
+                                                      конгрессно-выставочных
+                                                      мероприятиях и деловых
+                                                      миссиях
+                                                    </li>
+                                                  </ul>
+                                                </div>
+                                              </div>
+                                              <div class="collapse-wrap">
+                                                <div
+                                                  class="modal-collapse"
+                                                  data-toggle="collapse"
+                                                  data-target="#problem10"
+                                                >
+                                                  <img
+                                                    src="/navigator-measures/static/gisp/img/select-icon/other.svg"
+                                                  />Прочее<i
+                                                    class="icon-plus"
+                                                  ></i>
+                                                </div>
+                                                <div
+                                                  id="problem10"
+                                                  class="
+                                                    collapse
+                                                    modal-collapse-body
+                                                  "
+                                                >
+                                                  <ul>
+                                                    <li>
+                                                      Прочее (Гранты,
+                                                      Страхование, Вклад в
+                                                      уставный капитал,
+                                                      Формирование
+                                                      инвестиционных фондов
+                                                      (оказание поддержки через
+                                                      венчурные фонды),
+                                                      Фондирование,
+                                                      рефинансирование, выкуп
+                                                      закладных,
+                                                      Консалтинговые/Консультационные
+                                                      услуги )
+                                                    </li>
+                                                  </ul>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="fixed__content faild-wrap">
+                                          <div
+                                            class="
+                                              form-group
+                                              field-complexityid
+                                            "
+                                          >
+                                            <input
+                                              type="hidden"
+                                              name="complexityId"
+                                              value=""
+                                            /><select
+                                              id="complexityid"
+                                              class="
+                                                chosen-icon
+                                                selectpicker
+                                                complexityList
+                                                selectPlace
+                                                select2-hidden-accessible
+                                              "
+                                              name="complexityId[]"
+                                              multiple=""
+                                              size="4"
+                                              data-live-search="true"
+                                              data-placeholder="Выберите проблему"
+                                              data-directory="complexity"
+                                              placeholder="Проблемы предприятия"
+                                              data-placeholeder="Проблемы предприятия"
+                                              data-proxy="navigator-measures"
+                                              data-select2-id="complexityid"
+                                              tabindex="-1"
+                                              aria-hidden="true"
+                                            >
+                                              <option value="clear"></option>
+                                              <option value="8788174">
+                                                Высокие затраты на создание
+                                                новых производств и их развитие
+                                              </option>
+                                              <option value="8788175">
+                                                Высокий уровень налогообложения
+                                              </option>
+                                              <option value="8788181">
+                                                Выход на новые экспортные рынки
+                                                сбыта
+                                              </option>
+                                              <option value="8788176">
+                                                Кадровые проблемы
+                                              </option>
+                                              <option value="8788172">
+                                                Недостаток доступного
+                                                инвестиционного кредитования
+                                              </option>
+                                              <option value="8788179">
+                                                Необходимость модернизации
+                                                производства для выпуска
+                                                конкурентоспособной продукции
+                                              </option>
+                                              <option value="8788178">
+                                                Необходимость проведения НИОКР,
+                                                внедрения новых технологий,
+                                                освоение высокотехнологичной
+                                                продукции
+                                              </option>
+                                              <option value="8788173">
+                                                Нехватка оборотных средств
+                                              </option>
+                                              <option value="8788177">
+                                                Проблемы в работе предприятия,
+                                                связанные с операционной
+                                                деятельностью (просроченная
+                                                задолженность, разрыв платежного
+                                                оборота, персонал)
+                                              </option>
+                                              <option value="8788182">
+                                                Прочее (Гранты, Страхование,
+                                                Вклад в уставный капитал,
+                                                Формирование инвестиционных
+                                                фондов (оказание поддержки через
+                                                венчурные фонды), Фондирование,
+                                                рефинансирование, выкуп
+                                                закладных,
+                                                Консалтинговые/Консультационные
+                                                услуги)
+                                              </option>
+                                              <option value="8788180">
+                                                Снижающийся спрос на внутреннем
+                                                рынке, конкурирующий импорт
+                                              </option></select
+                                            ><span
+                                              class="
+                                                select2
+                                                select2-container
+                                                select2-container--default
+                                              "
+                                              dir="ltr"
+                                              data-select2-id="6"
+                                              style="width: 1975.69px"
+                                              ><span class="selection"
+                                                ><span
+                                                  class="
+                                                    select2-selection
+                                                    select2-selection--multiple
+                                                  "
+                                                  role="combobox"
+                                                  aria-haspopup="true"
+                                                  aria-expanded="false"
+                                                  tabindex="-1"
+                                                  ><ul
+                                                    class="
+                                                      select2-selection__rendered
+                                                    "
+                                                  >
+                                                    <li
+                                                      class="
+                                                        select2-search
+                                                        select2-search--inline
+                                                      "
+                                                    >
+                                                      <input
+                                                        class="
+                                                          select2-search__field
+                                                        "
+                                                        type="search"
+                                                        tabindex="0"
+                                                        autocomplete="off"
+                                                        autocorrect="off"
+                                                        autocapitalize="none"
+                                                        spellcheck="false"
+                                                        role="textbox"
+                                                        aria-autocomplete="list"
+                                                        placeholder=""
+                                                        style="width: 0.75em"
+                                                      />
+                                                    </li></ul></span></span
+                                              ><span
+                                                class="dropdown-wrapper"
+                                                aria-hidden="true"
+                                              ></span
+                                            ></span>
+
+                                            <div class="help-block"></div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="col-xs-3">
+                                      <div class="fixed__input">
+                                        <div class="fixed__header">
+                                          Дата принятия НПА
+                                        </div>
+                                        <div class="fixed__content faild-wrap">
+                                          <div class="fixed__date">
+                                            <div class="fixed__dateinput">
+                                              <div class="faild-wrap">
+                                                <div
+                                                  class="
+                                                    form-group
+                                                    field-docDateFrom
+                                                  "
+                                                >
+                                                  <input
+                                                    type="text"
+                                                    id="docDateFrom"
+                                                    class="
+                                                      field-input
+                                                      input-date
+                                                      date-to
+                                                    "
+                                                    name="npaStartDate"
+                                                    placeholder="от"
+                                                    data-plugin-inputmask="inputmask_2516c762"
+                                                  />
+
+                                                  <div class="help-block"></div>
+                                                </div>
+                                                <div class="remo"></div>
+                                              </div>
+                                            </div>
+                                            <div class="fixed__dateinput">
+                                              <div class="faild-wrap">
+                                                <div
+                                                  class="
+                                                    form-group
+                                                    field-docDateTo
+                                                  "
+                                                >
+                                                  <input
+                                                    type="text"
+                                                    id="docDateTo"
+                                                    class="
+                                                      field-input
+                                                      input-date
+                                                      date-from
+                                                    "
+                                                    name="npaEndDate"
+                                                    placeholder="до"
+                                                    data-plugin-inputmask="inputmask_2516c762"
+                                                  />
+
+                                                  <div class="help-block"></div>
+                                                </div>
+                                                <div class="remo"></div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="col-xs-3">
+                                      <div class="fixed__input">
+                                        <div class="fixed__header">
+                                          Дата прохождения конкурсных событий
+                                        </div>
+                                        <div class="fixed__content faild-wrap">
+                                          <div class="fixed__date">
+                                            <div class="fixed__dateinput">
+                                              <div class="faild-wrap">
+                                                <div
+                                                  class="
+                                                    form-group
+                                                    field-contestsDateFrom
+                                                  "
+                                                >
+                                                  <input
+                                                    type="text"
+                                                    id="contestsDateFrom"
+                                                    class="
+                                                      field-input
+                                                      input-date
+                                                      date-to
+                                                    "
+                                                    name="contestsStartDate"
+                                                    placeholder="от"
+                                                    data-plugin-inputmask="inputmask_2516c762"
+                                                  />
+
+                                                  <div class="help-block"></div>
+                                                </div>
+                                                <div class="remo"></div>
+                                              </div>
+                                            </div>
+                                            <div class="fixed__dateinput">
+                                              <div class="faild-wrap">
+                                                <div
+                                                  class="
+                                                    form-group
+                                                    field-contestsDateTo
+                                                  "
+                                                >
+                                                  <input
+                                                    type="text"
+                                                    id="contestsDateTo"
+                                                    class="
+                                                      field-input
+                                                      input-date
+                                                      date-from
+                                                    "
+                                                    name="contestsEndDate"
+                                                    placeholder="до"
+                                                    data-plugin-inputmask="inputmask_2516c762"
+                                                  />
+
+                                                  <div class="help-block"></div>
+                                                </div>
+                                                <div class="remo"></div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="col-xs-6">
+                                      <div class="fixed__input">
+                                        <div class="fixed__header">
+                                          Этап развития проекта/предприятия
+                                        </div>
+                                        <div class="fixed__content faild-wrap">
+                                          <div class="form-group field-stageid">
+                                            <input
+                                              type="hidden"
+                                              name="stageId"
+                                              value=""
+                                            /><select
+                                              id="stageid"
+                                              class="
+                                                chosen-base
+                                                selectpicker
+                                                selectPlace
+                                                select2-hidden-accessible
+                                              "
+                                              name="stageId[]"
+                                              multiple=""
+                                              size="4"
+                                              data-live-search="true"
+                                              data-placeholder="Выберите"
+                                              placeholder="Этап развития проекта/предприятия"
+                                              data-select2-id="stageid"
+                                              tabindex="-1"
+                                              aria-hidden="true"
+                                            >
+                                              <option value="clear"></option>
+                                              <option value="10525072">
+                                                Идея (стартап)
+                                              </option>
+                                              <option value="10525074">
+                                                Опытное производство и испытания
+                                              </option>
+                                              <option value="10525076">
+                                                Поддержание рентабельности
+                                                предприятия
+                                              </option>
+                                              <option value="10525073">
+                                                Прототип (стартап)
+                                              </option>
+                                              <option value="10525075">
+                                                Рост и расширение предприятия
+                                              </option></select
+                                            ><span
+                                              class="
+                                                select2
+                                                select2-container
+                                                select2-container--default
+                                              "
+                                              dir="ltr"
+                                              data-select2-id="5"
+                                              style="width: 370.828px"
+                                              ><span class="selection"
+                                                ><span
+                                                  class="
+                                                    select2-selection
+                                                    select2-selection--multiple
+                                                  "
+                                                  role="combobox"
+                                                  aria-haspopup="true"
+                                                  aria-expanded="false"
+                                                  tabindex="-1"
+                                                  ><ul
+                                                    class="
+                                                      select2-selection__rendered
+                                                    "
+                                                  >
+                                                    <li
+                                                      class="
+                                                        select2-search
+                                                        select2-search--inline
+                                                      "
+                                                    >
+                                                      <input
+                                                        class="
+                                                          select2-search__field
+                                                        "
+                                                        type="search"
+                                                        tabindex="0"
+                                                        autocomplete="off"
+                                                        autocorrect="off"
+                                                        autocapitalize="none"
+                                                        spellcheck="false"
+                                                        role="textbox"
+                                                        aria-autocomplete="list"
+                                                        placeholder=""
+                                                        style="width: 0.75em"
+                                                      />
+                                                    </li></ul></span></span
+                                              ><span
+                                                class="dropdown-wrapper"
+                                                aria-hidden="true"
+                                              ></span
+                                            ></span>
+
+                                            <div class="help-block"></div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="row">
+                                    <div class="col-xs-3 lst">
+                                      <div class="fixed__input">
+                                        <div
+                                          class="
+                                            fixed__header fixed__header--bgg
+                                          "
+                                        >
+                                          Размер предприятия
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="col-xs-9">
+                                      <div class="fixed__input">
+                                        <div class="fixed__content faild-wrap">
+                                          <div
+                                            class="
+                                              form-group
+                                              field-sizeenterpriseid
+                                            "
+                                          >
+                                            <input
+                                              type="hidden"
+                                              name="sizeEnterpriseId"
+                                              value=""
+                                            />
+                                            <div
+                                              id="sizeenterpriseid"
+                                              class="faild-wrap checkbox-list"
+                                              role="radiogroup"
+                                            >
+                                              <div
+                                                class="
+                                                  checkbox-list-ell
+                                                  check-size-ell
+                                                "
+                                              >
+                                                <label class="check-size"
+                                                  ><input
+                                                    type="radio"
+                                                    name="sizeEnterpriseId"
+                                                    class="radio"
+                                                    value="6403414" />
+                                                  <div class="radio-custom">
+                                                    <i
+                                                      class="
+                                                        size-icon
+                                                        icon-people3
+                                                      "
+                                                    ></i
+                                                    ><span class="prime"
+                                                      >Крупный (от 251
+                                                      чел.)</span
+                                                    ><br /><span
+                                                      class="sub"
+                                                    ></span></div
+                                                ></label>
+                                              </div>
+                                              <div
+                                                class="
+                                                  checkbox-list-ell
+                                                  check-size-ell
+                                                "
+                                              >
+                                                <label class="check-size"
+                                                  ><input
+                                                    type="radio"
+                                                    name="sizeEnterpriseId"
+                                                    class="radio"
+                                                    value="6403417" />
+                                                  <div class="radio-custom">
+                                                    <i
+                                                      class="
+                                                        size-icon
+                                                        icon-people2
+                                                      "
+                                                    ></i
+                                                    ><span class="prime"
+                                                      >Средний (100 - 250
+                                                      чел.)</span
+                                                    ><br /><span
+                                                      class="sub"
+                                                    ></span></div
+                                                ></label>
+                                              </div>
+                                              <div
+                                                class="
+                                                  checkbox-list-ell
+                                                  check-size-ell
+                                                "
+                                              >
+                                                <label class="check-size"
+                                                  ><input
+                                                    type="radio"
+                                                    name="sizeEnterpriseId"
+                                                    class="radio"
+                                                    value="6403420" />
+                                                  <div class="radio-custom">
+                                                    <i
+                                                      class="
+                                                        size-icon
+                                                        icon-people1
+                                                      "
+                                                    ></i
+                                                    ><span class="prime"
+                                                      >Малый (1 - 100
+                                                      чел.)</span
+                                                    ><br /><span
+                                                      class="sub"
+                                                    ></span></div
+                                                ></label>
+                                              </div>
+                                            </div>
+
+                                            <div class="help-block"></div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <input
+                            type="hidden"
+                            id="date"
+                            class="search-date"
+                            name="date"
+                          />
+                          <input
+                            type="hidden"
+                            id="status"
+                            class="search-status"
+                            name="status"
+                            value="all"
+                          />
+                          <input
+                            type="hidden"
+                            id="state"
+                            class="search-state"
+                            name="state"
+                          />
+                          <input
+                            type="hidden"
+                            id="similarmeasures"
+                            class="search-similar"
+                            name="similarMeasures"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+
+                <div class="result-block result-block--sm">
+                  <div class="container">
+                    <div class="stx">
+                      <div class="block-content static" name="static">
+                        <div class="row">
+                          <div
+                            class="
+                              col-xs-12 col-lg-9
+                              result-block__information
+                              static
+                            "
+                          >
+                            <div class="result-control control-type">
+                              <div class="type-list-wrap" style="float: left">
+                                <span class="active current info-text">
+                                  Найдено мер поддержки<span
+                                    class="status"
+                                  ></span
+                                  >:&nbsp;
+                                  <span class="count">2 017</span>
+                                  <div class="drx">
+                                    <div
+                                      class="dropdown__txt"
+                                      data-toggle="dropdown"
+                                    >
+                                      Подробнее...
+                                    </div>
+                                    <div class="dropdown-menu">
+                                      <div class="block-content">
+                                        <p>
+                                          По вашему запросу найдено 301
+                                          федеральных мер поддержки и 1716
+                                          региональных мер поддержки. По 172
+                                          мерам предусмотрено финансирование на
+                                          2021 год
+                                        </p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </span>
+                              </div>
+                              <div class="type-list-wrap">
+                                <ul class="nav nav-tabs type-list nav-status">
+                                  <li class="">
+                                    <a
+                                      data-toggle="tab"
+                                      data-status="all"
+                                      href="#table-all"
+                                      aria-expanded="false"
+                                      >Все</a
+                                    >
+                                  </li>
+                                  <li class="active">
+                                    <a
+                                      data-toggle="tab"
+                                      data-status="active"
+                                      href="#table-active"
+                                      aria-expanded="true"
+                                      >Активные (1915)</a
+                                    >
+                                  </li>
+                                  <li class="">
+                                    <a
+                                      data-toggle="tab"
+                                      data-status="none-active"
+                                      href="#table-none-active"
+                                      aria-expanded="false"
+                                      >Неактивные (102)</a
+                                    >
+                                  </li>
+                                </ul>
+                                <div class="dropdown-icon">
+                                  <i
+                                    class="quest-icon dropdown-toggle"
+                                    data-toggle="dropdown"
+                                  ></i>
+                                  <div class="dropdown-menu">
+                                    <div class="block-head">
+                                      Состав вкладок:
+                                    </div>
+                                    <div class="block-content">
+                                      <p>
+                                        <b>Все</b> – все меры поддержки
+                                        (активные и неактивные).
+                                      </p>
+                                      <p>
+                                        <b>Активные</b> (статус меры поддержки)
+                                        - Активные меры поддержки, которые
+                                        содержат прошедшие, текущие или
+                                        предстоящие даты приема заявок и
+                                        ближайшего конкурса (или не содержат
+                                        значений дат).
+                                      </p>
+                                      <p>
+                                        <b>Неактивные</b> (статус меры
+                                        поддержки) - Неактивные меры поддержки.
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-xs-12 col-lg-3 result-block__events">
+                            <div class="wrappper">
+                              <div
+                                class="
+                                  result-control result-control--bg
+                                  js-btn-toggle
+                                "
+                              >
+                                <div class="js-btn-toggle-hid">
+                                  Конкурсные события
+                                </div>
+                                <div class="js-btn-toggle__active">
+                                  <div class="js-btn-toggle__icon">
+                                    <img
+                                      src="/navigator-measures/static/gisp/img/arrow-right-line.png"
+                                      alt=""
+                                    />
+                                  </div>
+                                  <div class="js-btn-toggle__inner">
+                                    Вернуться к поиску мер
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-xs-12 data-rox">
+                            <div class="tab-content" id="tab-content">
+                              <div id="table-all" class="tab-pane">
+                              </div>
+                                <div
+                                  class="table-wrap table"
+                                  data-status="none-active"
+                                >
+                                  <div class="row">
+                                    <div class="col-xs-12">
+                                      <div
+                                        class="result-seach-wrap row"
+                                        data-view="block"
+                                        data-total="2017"
+                                      >
+                                        <div
+                                          class="
+                                            result-grid
+                                            col-lg-3 col-md-4 col-sm-6 col-xs-12
+                                          "
+                                        >
+                                          <div class="result-ell">
+                                            <a
+                                              href="/navigator-measures/ru-RU/measures/measure/view-handler?gispId=10511015"
+                                              class="result-card"
+                                            >
+                                              <div class="result-card__heading">
+                                                <span class="result-card__logo"
+                                                  ><img
+                                                    class="measure-logo"
+                                                    src="https://gisp.gov.ru//upload/iblock/dbd/minpromtorg_po-umolchaniyu.png"
+                                                    alt=""
+                                                /></span>
+                                                <div class="result-card__info">
+                                                  <span
+                                                    class="
+                                                      result-card__info-item
+                                                    "
+                                                    ><img
+                                                      src="/navigator-measures/static/gisp/img/federal_icon.svg"
+                                                      alt=""
+                                                  /></span>
+                                                </div>
+                                              </div>
+                                              <strong
+                                                class="result-card__title"
+                                              >
+                                                Специальный инвестиционный
+                                                контракт (СПИК 2.0)
+                                              </strong>
+                                            </a>
+                                            <div class="cardx-list">
+                                              <div class="cardx-list__subtitle">
+                                                Федеральный институт развития
+                                              </div>
+                                            </div>
+                                            <div class="result-card__footer">
+                                              <span class="result-card__doc">
+                                                Номер НПА: 488 / 31.12.2014
+                                              </span>
+
+                                              <div
+                                                class="
+                                                  result-card__dropdown
+                                                  dropdown
+                                                "
+                                              >
+                                                <button
+                                                  class="
+                                                    result-card__dropdown-toggle
+                                                    dropdown-toggle
+                                                  "
+                                                  data-toggle="dropdown"
+                                                  aria-haspopup="true"
+                                                  aria-expanded="false"
+                                                >
+                                                  <span></span>
+                                                </button>
+                                                <ul
+                                                  class="
+                                                    result-card__dropdown-list
+                                                    dropdown-menu
+                                                  "
+                                                >
+                                                  <div
+                                                    class="
+                                                      result-card__dropdown-arrow
+                                                    "
+                                                  ></div>
+                                                  <li>
+                                                    <a
+                                                      href="https://gisp.gov.ru/support-measures/list/10511015/#send-frp"
+                                                    >
+                                                      <i
+                                                        class="icon-message"
+                                                      ></i>
+                                                      <span
+                                                        >Консультация ФРП</span
+                                                      >
+                                                    </a>
+                                                  </li>
+                                                  <li>
+                                                    <a
+                                                      href="https://gisp.gov.ru/support-measures/list/10511015/?subscribe=1"
+                                                    >
+                                                      <i class="icon-mail"></i>
+                                                      <span
+                                                        >Подписка на
+                                                        обновления</span
+                                                      >
+                                                    </a>
+                                                  </li>
+                                                  <li>
+                                                    <span
+                                                      class="add-compare"
+                                                      data-url="/navigator-measures/ru-RU/measures/compare/add-compare/2584699"
+                                                    >
+                                                      <i
+                                                        class="icon-comparison"
+                                                      ></i>
+                                                      <span
+                                                        >Добавить к
+                                                        сравнению</span
+                                                      >
+                                                    </span>
+                                                  </li>
+                                                </ul>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div
+                                          class="
+                                            result-grid
+                                            col-lg-3 col-md-4 col-sm-6 col-xs-12
+                                          "
+                                        >
+                                          <div class="result-ell">
+                                            <a
+                                              href="/navigator-measures/ru-RU/measures/measure/view-handler?gispId=8959695"
+                                              class="result-card"
+                                            >
+                                              <div class="result-card__heading">
+                                                <span class="result-card__logo"
+                                                  ><img
+                                                    class="measure-logo"
+                                                    src="https://gisp.gov.ru//upload/navigator2/9ec/frp2.jpg"
+                                                    alt=""
+                                                /></span>
+                                                <div class="result-card__info">
+                                                  <span
+                                                    class="
+                                                      result-card__info-item
+                                                    "
+                                                    ><img
+                                                      src="/navigator-measures/static/gisp/img/federal_icon.svg"
+                                                      alt=""
+                                                  /></span>
+                                                </div>
+                                              </div>
+                                              <strong
+                                                class="result-card__title"
+                                              >
+                                                Программа ФРП "Цифровизация
+                                                промышленности"
+                                              </strong>
+                                            </a>
+                                            <div class="cardx-list">
+                                              <div class="cardx-list__subtitle">
+                                                Федеральный институт развития
+                                              </div>
+                                            </div>
+                                            <div class="result-card__footer">
+                                              <span class="result-card__doc">
+                                                Номер НПА: Стандарт СФ-И-116 /
+                                                21.09.2018
+                                              </span>
+
+                                              <div
+                                                class="
+                                                  result-card__dropdown
+                                                  dropdown
+                                                "
+                                              >
+                                                <button
+                                                  class="
+                                                    result-card__dropdown-toggle
+                                                    dropdown-toggle
+                                                  "
+                                                  data-toggle="dropdown"
+                                                  aria-haspopup="true"
+                                                  aria-expanded="false"
+                                                >
+                                                  <span></span>
+                                                </button>
+                                                <ul
+                                                  class="
+                                                    result-card__dropdown-list
+                                                    dropdown-menu
+                                                  "
+                                                >
+                                                  <div
+                                                    class="
+                                                      result-card__dropdown-arrow
+                                                    "
+                                                  ></div>
+                                                  <li>
+                                                    <a
+                                                      href="https://frprf.ru/informatsiya-dlya-zayaviteley/"
+                                                    >
+                                                      <i
+                                                        class="icon-config"
+                                                      ></i>
+                                                      <span>Подать заявку</span>
+                                                    </a>
+                                                  </li>
+                                                  <li>
+                                                    <a
+                                                      href="https://gisp.gov.ru/support-measures/list/8959695/#send-frp"
+                                                    >
+                                                      <i
+                                                        class="icon-message"
+                                                      ></i>
+                                                      <span
+                                                        >Консультация ФРП</span
+                                                      >
+                                                    </a>
+                                                  </li>
+                                                  <li>
+                                                    <a
+                                                      href="https://gisp.gov.ru/support-measures/list/8959695/?subscribe=1"
+                                                    >
+                                                      <i class="icon-mail"></i>
+                                                      <span
+                                                        >Подписка на
+                                                        обновления</span
+                                                      >
+                                                    </a>
+                                                  </li>
+                                                  <li>
+                                                    <span
+                                                      class="add-compare"
+                                                      data-url="/navigator-measures/ru-RU/measures/compare/add-compare/2585212"
+                                                    >
+                                                      <i
+                                                        class="icon-comparison"
+                                                      ></i>
+                                                      <span
+                                                        >Добавить к
+                                                        сравнению</span
+                                                      >
+                                                    </span>
+                                                  </li>
+                                                </ul>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div
+                                          class="
+                                            result-grid
+                                            col-lg-3 col-md-4 col-sm-6 col-xs-12
+                                          "
+                                        >
+                                          <div class="result-ell">
+                                            <a
+                                              href="/navigator-measures/ru-RU/measures/measure/view-handler?gispId=8869240"
+                                              class="result-card"
+                                            >
+                                              <div class="result-card__heading">
+                                                <span class="result-card__logo"
+                                                  ><img
+                                                    class="measure-logo"
+                                                    src="https://gisp.gov.ru//upload/navigator2/607/frp2.jpg"
+                                                    alt=""
+                                                /></span>
+                                                <div class="result-card__info">
+                                                  <span
+                                                    class="
+                                                      result-card__info-item
+                                                    "
+                                                    ><img
+                                                      src="/navigator-measures/static/gisp/img/federal_icon.svg"
+                                                      alt=""
+                                                  /></span>
+                                                </div>
+                                              </div>
+                                              <strong
+                                                class="result-card__title"
+                                              >
+                                                Программа ФРП "Маркировка
+                                                лекарств"
+                                              </strong>
+                                            </a>
+                                            <div class="cardx-list">
+                                              <div class="cardx-list__subtitle">
+                                                Федеральный институт развития
+                                              </div>
+                                            </div>
+                                            <div class="result-card__footer">
+                                              <span class="result-card__doc">
+                                                Номер НПА: СФ-И-105 / 21.09.2018
+                                              </span>
+
+                                              <div
+                                                class="
+                                                  result-card__dropdown
+                                                  dropdown
+                                                "
+                                              >
+                                                <button
+                                                  class="
+                                                    result-card__dropdown-toggle
+                                                    dropdown-toggle
+                                                  "
+                                                  data-toggle="dropdown"
+                                                  aria-haspopup="true"
+                                                  aria-expanded="false"
+                                                >
+                                                  <span></span>
+                                                </button>
+                                                <ul
+                                                  class="
+                                                    result-card__dropdown-list
+                                                    dropdown-menu
+                                                  "
+                                                >
+                                                  <div
+                                                    class="
+                                                      result-card__dropdown-arrow
+                                                    "
+                                                  ></div>
+                                                  <li>
+                                                    <a
+                                                      href="https://frprf.ru/informatsiya-dlya-zayaviteley/"
+                                                    >
+                                                      <i
+                                                        class="icon-config"
+                                                      ></i>
+                                                      <span>Подать заявку</span>
+                                                    </a>
+                                                  </li>
+                                                  <li>
+                                                    <a
+                                                      href="https://gisp.gov.ru/support-measures/list/8869240/?subscribe=1"
+                                                    >
+                                                      <i class="icon-mail"></i>
+                                                      <span
+                                                        >Подписка на
+                                                        обновления</span
+                                                      >
+                                                    </a>
+                                                  </li>
+                                                  <li>
+                                                    <span
+                                                      class="add-compare"
+                                                      data-url="/navigator-measures/ru-RU/measures/compare/add-compare/2585241"
+                                                    >
+                                                      <i
+                                                        class="icon-comparison"
+                                                      ></i>
+                                                      <span
+                                                        >Добавить к
+                                                        сравнению</span
+                                                      >
+                                                    </span>
+                                                  </li>
+                                                </ul>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div
+                                          class="
+                                            result-grid
+                                            col-lg-3 col-md-4 col-sm-6 col-xs-12
+                                          "
+                                        >
+                                          <div class="result-ell">
+                                            <a
+                                              href="/navigator-measures/ru-RU/measures/measure/view-handler?gispId=9126744"
+                                              class="result-card"
+                                            >
+                                              <div class="result-card__heading">
+                                                <span class="result-card__logo"
+                                                  ><img
+                                                    class="measure-logo"
+                                                    src="https://gisp.gov.ru//upload/navigator2/e5b/frp2.jpg"
+                                                    alt=""
+                                                /></span>
+                                                <div class="result-card__info">
+                                                  <span
+                                                    class="
+                                                      result-card__info-item
+                                                    "
+                                                    ><img
+                                                      src="/navigator-measures/static/gisp/img/federal_icon.svg"
+                                                      alt=""
+                                                  /></span>
+                                                </div>
+                                              </div>
+                                              <strong
+                                                class="result-card__title"
+                                              >
+                                                Программа ФРП "Повышение
+                                                производительности труда"
+                                              </strong>
+                                            </a>
+                                            <div class="cardx-list">
+                                              <div class="cardx-list__subtitle">
+                                                Федеральный институт развития
+                                              </div>
+                                            </div>
+                                            <div class="result-card__footer">
+                                              <span class="result-card__doc">
+                                                Номер НПА: СФ-И-117 / 21.09.2018
+                                              </span>
+
+                                              <div
+                                                class="
+                                                  result-card__dropdown
+                                                  dropdown
+                                                "
+                                              >
+                                                <button
+                                                  class="
+                                                    result-card__dropdown-toggle
+                                                    dropdown-toggle
+                                                  "
+                                                  data-toggle="dropdown"
+                                                  aria-haspopup="true"
+                                                  aria-expanded="false"
+                                                >
+                                                  <span></span>
+                                                </button>
+                                                <ul
+                                                  class="
+                                                    result-card__dropdown-list
+                                                    dropdown-menu
+                                                  "
+                                                >
+                                                  <div
+                                                    class="
+                                                      result-card__dropdown-arrow
+                                                    "
+                                                  ></div>
+                                                  <li>
+                                                    <a
+                                                      href="https://frprf.ru/informatsiya-dlya-zayaviteley/"
+                                                    >
+                                                      <i
+                                                        class="icon-config"
+                                                      ></i>
+                                                      <span>Подать заявку</span>
+                                                    </a>
+                                                  </li>
+                                                  <li>
+                                                    <a
+                                                      href="https://gisp.gov.ru/support-measures/list/9126744/#send-frp"
+                                                    >
+                                                      <i
+                                                        class="icon-message"
+                                                      ></i>
+                                                      <span
+                                                        >Консультация ФРП</span
+                                                      >
+                                                    </a>
+                                                  </li>
+                                                  <li>
+                                                    <a
+                                                      href="https://gisp.gov.ru/support-measures/list/9126744/?subscribe=1"
+                                                    >
+                                                      <i class="icon-mail"></i>
+                                                      <span
+                                                        >Подписка на
+                                                        обновления</span
+                                                      >
+                                                    </a>
+                                                  </li>
+                                                  <li>
+                                                    <span
+                                                      class="add-compare"
+                                                      data-url="/navigator-measures/ru-RU/measures/compare/add-compare/2585041"
+                                                    >
+                                                      <i
+                                                        class="icon-comparison"
+                                                      ></i>
+                                                      <span
+                                                        >Добавить к
+                                                        сравнению</span
+                                                      >
+                                                    </span>
+                                                  </li>
+                                                </ul>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="stx__footer">
+                            <div class="stx__pagi">
+                              <div class="pagination-wrap">
+                                <ul class="pagination-list">
+                                  <li class="pagination-cont prev disabled">
+                                    <a></a>
+                                  </li>
+                                  <li class="pagination-ell active">
+                                    <a
+                                      class=""
+                                      href="/navigator-measures/ru-RU?status=all&amp;page=1&amp;per-page=12"
+                                      data-page="0"
+                                      >1</a
+                                    >
+                                  </li>
+                                  <li class="pagination-ell">
+                                    <a
+                                      class=""
+                                      href="/navigator-measures/ru-RU?status=all&amp;page=2&amp;per-page=12"
+                                      data-page="1"
+                                      >2</a
+                                    >
+                                  </li>
+                                  <li class="pagination-ell">
+                                    <a
+                                      class=""
+                                      href="/navigator-measures/ru-RU?status=all&amp;page=3&amp;per-page=12"
+                                      data-page="2"
+                                      >3</a
+                                    >
+                                  </li>
+                                  <li class="pagination-ell">
+                                    <a
+                                      class=""
+                                      href="/navigator-measures/ru-RU?status=all&amp;page=4&amp;per-page=12"
+                                      data-page="3"
+                                      >4</a
+                                    >
+                                  </li>
+                                  <li class="pagination-ell">
+                                    <a
+                                      class=""
+                                      href="/navigator-measures/ru-RU?status=all&amp;page=5&amp;per-page=12"
+                                      data-page="4"
+                                      >5</a
+                                    >
+                                  </li>
+                                  <li class="pagination-cont next">
+                                    <a
+                                      class=""
+                                      href="/navigator-measures/ru-RU?status=all&amp;page=2&amp;per-page=12"
+                                      data-page="1"
+                                    ></a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div class="stx__btn">
+                              <div class="btn-flex">
+                                <button
+                                  class="btn btn-icon btn-compare"
+                                  data-url="/navigator-measures/ru-RU/measures/compare/load-compare"
+                                >
+                                  Сопоставление мер
+                                </button>
+
+                                <div class="dropdown show">
+                                  <a
+                                    class="btn btn-secondary dropdown-toggle"
+                                    href="#"
+                                    role="button"
+                                    id="dropdownMenuLink"
+                                    data-toggle="dropdown"
+                                    aria-haspopup="true"
+                                    aria-expanded="false"
+                                  >
+                                    Сохранить результаты
+                                  </a>
+
+                                  <div
+                                    class="dropdown-menu"
+                                    aria-labelledby="dropdownMenuLink"
+                                  >
+                                    <a
+                                      data-pjax="0"
+                                      href="/navigator-measures/ru-RU/measures/measure/open-pdf?status=all"
+                                      class="pdf-generate"
+                                    >
+                                      <div class="btn btn-icon">
+                                        <i class="icon-download"></i>
+                                        в формате PDF
+                                      </div>
+                                    </a>
+                                    <a
+                                      data-pjax="0"
+                                      href="/navigator-measures/ru-RU/measures/measure/download-word?status=all"
+                                    >
+                                      <div class="btn btn-icon">
+                                        <i class="icon-download"></i>
+                                        в формате DOC
+                                      </div>
+                                    </a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="block-aside">
+                      <div class="block-aside__toggle">
+                        <img
+                          src="/navigator-measures/static/gisp/img/calendar-2-line.png"
+                          alt=""
+                        />
+                      </div>
+                      <div class="calendar-wrap">
+                        <div class="row">
+                          <div class="col-xs-12 col-sm-push-6 col-sm-6">
+                            <div
+                              class="calendar-col-control"
+                              data-toggle="collapse"
+                              data-target="#calendar-col"
+                              aria-expanded="true"
+                            >
+                              <i class="calendar-ic icon-calendar"></i>
+                              <span class="text">Скрыть календарь</span>
+                              <i class="arrow-ic icon-arrow-down"></i>
+                            </div>
+                          </div>
+                        </div>
+                        <div id="calendar-col" class="collapse in">
+                          <div class="calendar-block">
+                            <div class="calendar-header">
+                              <h4 class="calendar-header__title">
+                                Календарь конкурсных событий
+                              </h4>
+                              <ul class="calendar-header__status nav-state">
+                                <li class="calendar-header__status-ell">
+                                  <a
+                                    data-toggle="tab"
+                                    data-state="archive"
+                                    href="#table-archive"
+                                    >Прошедшие</a
+                                  >
+                                </li>
+                                <li class="calendar-header__status-ell">
+                                  <a
+                                    data-toggle="tab"
+                                    data-state="current"
+                                    href="#table-current"
+                                    >Текущие</a
+                                  >
+                                </li>
+                                <li class="calendar-header__status-ell">
+                                  <a
+                                    data-toggle="tab"
+                                    data-state="feature"
+                                    href="#table-feature"
+                                    >Предстоящие</a
+                                  >
+                                </li>
+                              </ul>
+                            </div>
+                            <div class="calendar-header__top-btn">
+                              <div class="btnPrev mounth-btn">
+                                <i class="icon-arrow-left"></i>
+                                Пред. 3 мес.
+                              </div>
+                              <div class="btnNext mounth-btn">
+                                След. 3 мес.
+                                <i class="icon-arrow-right"></i>
+                              </div>
+                            </div>
+                            <div
+                              id="scheduler"
+                              data-year-param="[year]"
+                              data-source="/navigator-measures/ru-RU/measures/measure/get-dates"
+                            ></div>
+                            <div class="calendar-footer">
+                              <div class="btnPrev mounth-btn">
+                                <i class="icon-arrow-left"></i>
+                                Пред. 3 мес.
+                              </div>
+                              <div class="btnNext mounth-btn">
+                                След. 3 мес.
+                                <i class="icon-arrow-right"></i>
+                              </div>
+                            </div>
+                            <div class="days-view-block">
+                              <div class="content-wrap">
+                                <div class="block-head">
+                                  <div class="mounth-slider-wrap">
+                                    <div class="mounth-slider">
+                                      <div class="slide-ell" data-mounth="01">
+                                        Январь
+                                      </div>
+                                      <div class="slide-ell" data-mounth="02">
+                                        Февраль
+                                      </div>
+                                      <div class="slide-ell" data-mounth="03">
+                                        Март
+                                      </div>
+                                      <div class="slide-ell" data-mounth="04">
+                                        Апрель
+                                      </div>
+                                      <div class="slide-ell" data-mounth="05">
+                                        Май
+                                      </div>
+                                      <div class="slide-ell" data-mounth="06">
+                                        Июнь
+                                      </div>
+                                      <div class="slide-ell" data-mounth="07">
+                                        Июль
+                                      </div>
+                                      <div class="slide-ell" data-mounth="08">
+                                        Август
+                                      </div>
+                                      <div class="slide-ell" data-mounth="09">
+                                        Сентябрь
+                                      </div>
+                                      <div class="slide-ell" data-mounth="10">
+                                        Октябрь
+                                      </div>
+                                      <div class="slide-ell" data-mounth="11">
+                                        Ноябрь
+                                      </div>
+                                      <div class="slide-ell" data-mounth="12">
+                                        Декабрь
+                                      </div>
+                                    </div>
+                                    <div
+                                      class="munth-slide-prew slider-control"
+                                    >
+                                      <i class="icon-arrow-left"></i>
+                                    </div>
+                                    <div
+                                      class="munth-slide-next slider-control"
+                                    >
+                                      <i class="icon-arrow-right"></i>
+                                    </div>
+                                  </div>
+                                  <div class="block-close">
+                                    <i class="icon-close"></i>
+                                  </div>
+                                </div>
+                                <div class="block-body">
+                                  <div class="slider-days-list">
+                                    <div class="slide-ell"></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="modal modal-desct modal-add" id="add">
+              <div
+                class="modal__content modal-dialog modal-big"
+                role="document"
+              >
+                <div class="modal__top">
+                  <div class="modal__title"></div>
+                  <div class="modal__close" data-dismiss="modal">
+                    <i class="sprite sprite-close"></i>
+                  </div>
+                </div>
+                <div class="modal-add-center">Мера добавлена в сравнение</div>
+              </div>
+            </div>
+
+            <div class="modal modal-desct modal-add" id="saveRequest-complete">
+              <div
+                class="modal__content modal-dialog modal-big"
+                role="document"
+              >
+                <div class="modal__top">
+                  <div class="modal__title"></div>
+                  <div class="modal__close" data-dismiss="modal">
+                    <i class="sprite sprite-close"></i>
+                  </div>
+                </div>
+                <div class="modal-add-center">Ваш запрос успешно сохранен</div>
+              </div>
+            </div>
+
+            <div class="wrap-compare">
+              <div class="modal modal-add" id="compare">
+                <div
+                  class="modal__content modal-dialog modal-big"
+                  role="document"
+                >
+                  <div class="modal__top">
+                    <div class="modal__title"></div>
+                    <div class="modal__close" data-dismiss="modal">
+                      <i class="sprite sprite-close"></i>
+                    </div>
+                  </div>
+                  <div class="modal-add-center">
+                    Вы не выбрали меры стимулирования для сравнения
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /content -->
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="footer__inner">
+                <span class="footer__copyright footer__block"
+                  >Государственная информационная система промышленности</span
+                >
+                <div class="footer__links footer__block">
+                  <a
+                    class="footer__link"
+                    href="http://minpromtorg.gov.ru"
+                    target="_blank"
+                    ><img
+                      class="footer__logo"
+                      src="/navigator-measures/static/gisp/img/logo-sm.png"
+                      alt=""
+                  /></a>
+                  <a
+                    class="footer__link"
+                    href="http://frprf.ru/"
+                    target="_blank"
+                    ><img
+                      class="footer__logo"
+                      src="/navigator-measures/static/gisp/img/logo_white_frp.png"
+                      alt=""
+                  /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+    <script src="https://gisp.gov.ru/navigator-measures/assets/575d9251/jquery.min.js"></script>
+    <script src="https://gisp.gov.ru/navigator-measures/assets/7d21d0e8/js/bootstrap.min.js?v=1620656302"></script>
+    <script src="https://gisp.gov.ru/navigator-measures/static/gisp/js/bundle.js?v=1620656255"></script>
+    <script src="https://gisp.gov.ru/navigator-measures/static/gisp/js/slick.js?v=1620656255"></script>
+    <script src="https://gisp.gov.ru/navigator-measures/assets/caebcb91/js/bootstrap-year-calendar.min.js?v=1620656302"></script>
+    <script src="https://gisp.gov.ru/navigator-measures/assets/caebcb91/js/languages/bootstrap-year-calendar.ru.js?v=1620656302"></script>
+    <script src="https://gisp.gov.ru/navigator-measures/assets/c866cda0/perfect-scrollbar.min.js?v=1620656302"></script>
+    <script src="https://gisp.gov.ru/navigator-measures/assets/c866cda0/select2_measure.full.js?v=1620656302"></script>
+    <script src="https://gisp.gov.ru/navigator-measures/assets/c866cda0/select2/select2totree.js?v=1620656302"></script>
+    <script src="https://gisp.gov.ru/navigator-measures/assets/c866cda0/validate.form.js?v=1620656302"></script>
+    <script src="https://gisp.gov.ru/navigator-measures/assets/c866cda0/compare/js/compare.js?v=1620656302"></script>
+    <script src="https://gisp.gov.ru/navigator-measures/assets/c866cda0/zebra/zebra_datepicker.src.js?v=1620656302"></script>
+    <script src="https://gisp.gov.ru/navigator-measures/assets/c866cda0/save-request.js?v=1620656302"></script>
+    <script src="https://gisp.gov.ru/navigator-measures/assets/c866cda0/translate.js?v=1620656302"></script>
+    <script src="https://gisp.gov.ru/navigator-measures/assets/9746e49/yii.js?v=1620656302"></script>
+    <script src="https://gisp.gov.ru/navigator-measures/assets/9746e49/yii.validation.js?v=1620656302"></script>
+    <script src="https://gisp.gov.ru/navigator-measures/assets/b57b20b/js/select2.full.min.js?v=1620656302"></script>
+    <script src="https://gisp.gov.ru/navigator-measures/assets/b57b20b/js/select2-krajee.min.js?v=1620656302"></script>
+    <script src="https://gisp.gov.ru/navigator-measures/assets/b57b20b/js/i18n/ru.js?v=1620656302"></script>
+    <script src="https://gisp.gov.ru/navigator-measures/assets/65bcbcf4/js/kv-widgets.min.js?v=1620656302"></script>
+    <script src="https://gisp.gov.ru/navigator-measures/assets/a9f223c6/jquery.inputmask.bundle.js?v=1620656302"></script>
+    <script src="https://gisp.gov.ru/navigator-measures/assets/9746e49/yii.activeForm.js?v=1620656302"></script>
+    <script src="https://gisp.gov.ru/navigator-measures/assets/621c31c8/jquery.pjax.js?v=1620656302"></script>
+    <script>
+      jQuery(function ($) {
+        jQuery && jQuery.pjax && (jQuery.pjax.defaults.maxCacheLength = 0);
+        if (jQuery("#okvedid").data("select2")) {
+          jQuery("#okvedid").select2("destroy");
+        }
+        jQuery
+          .when(jQuery("#okvedid").select2(select2_cb0575ac))
+          .done(initS2Loading("okvedid", "s2options_14ae84a6"));
+
+        jQuery("#docDateFrom").inputmask(inputmask_2516c762);
+        jQuery("#docDateTo").inputmask(inputmask_2516c762);
+        jQuery("#contestsDateFrom").inputmask(inputmask_2516c762);
+        jQuery("#contestsDateTo").inputmask(inputmask_2516c762);
+        jQuery("#filter-form").yiiActiveForm(
+          [
+            {
+              id: "smallname",
+              name: "smallName",
+              container: ".field-smallname",
+              input: "#smallname",
+              validate: function (attribute, value, messages, deferred, $form) {
+                yii.validation.string(value, messages, {
+                  message:
+                    "Значение «Краткое наименование меры поддержки» должно быть строкой.",
+                  skipOnEmpty: 1,
+                });
+              },
+            },
+          ],
+          []
+        );
+        jQuery(document).pjax("#myform a", {
+          push: true,
+          replace: false,
+          timeout: false,
+          scrollTo: false,
+          container: "#myform",
+        });
+        jQuery(document).on("submit", "#filter-form", function (event) {
+          jQuery.pjax.submit(event, {
+            push: true,
+            replace: false,
+            timeout: false,
+            scrollTo: false,
+            container: "#myform",
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

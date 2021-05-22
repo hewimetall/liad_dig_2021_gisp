@@ -1,0 +1,33 @@
+version: "3"
+services:
+  web:
+    build: src/
+    ports:
+      - "8000:8000"
+    command: uvicorn main:app  --reload --port 8000 --host 0.0.0.0 --log-level warning
+    links:
+      - dbpostgres
+
+#  redis:
+#    image: 'bitnami/redis:latest'
+##    network_mode: host
+##    restart: always
+#    ports:
+#      - "6379:6379"
+#    environment:
+#      - REDIS_PASSWORD=password123
+
+  dbpostgres:
+    image: postgres:12.7
+#    restart: always
+    volumes:
+      - db_data:/var/lib/postgresql
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: pguser
+      POSTGRES_PASSWORD: pguser
+      POSTGRES_DB: pgdb_fastapi
+
+volumes:
+  db_data: {}
