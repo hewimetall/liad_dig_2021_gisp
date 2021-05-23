@@ -7,6 +7,8 @@ from fastapi.responses import JSONResponse
 from fastapi import Cookie
 from core.config import templates
 from db.model import UsersAnonModel, FilterModel, RowClickModel
+from db.run_load_data import save_data
+
 
 router = APIRouter()
 
@@ -67,3 +69,21 @@ async def link_use(gispId: int, request: Request , trakers: Optional[str] = Cook
 
     await RowClickModel.create(click_id=gispId, user=user)
     return response
+
+
+@router.get("support-measures/list/{gispId}/")
+async def link_use(gispId: int, request: Request , trakers: Optional[str] = Cookie(None)):
+    response = templates.TemplateResponse("elem_selected.html",{"request":request, })
+    if not trakers:
+        await UsersAnonModel.next_user(response,request.headers)
+    user = await UsersAnonModel.get(session_seed=trakers)
+
+    await RowClickModel.create(click_id=gispId, user=user)
+    return response
+
+
+
+@router.get("/load_data/")
+async def link_use():
+    await save_data()
+    return "OK"

@@ -3,7 +3,7 @@ from tortoise.contrib.fastapi import register_tortoise
 from core import config as settings
 
 
-def init_app(app: FastAPI) -> bool:
+async def init_app(app: FastAPI) -> bool:
     register_tortoise(
         app,
         db_url=get_db_uri(
