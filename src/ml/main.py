@@ -1,22 +1,23 @@
-from gensim import corpora, models
 import re
 
+import translators as ts
+from gensim import corpora, models
 
-class DataProcess():
+
+class DataProcess:
     num_topics = 2
     num_words = 3
     prefix_pach = 'ml.data_files'
 
-
     def get_model(self):
 
         # обучение модель
-        ldamodel = models.ldamodel.LdaModel(self.data, id2word=self.dictionary, num_topics=self.num_topics, passes=20, alpha=1.25,
+        ldamodel = models.ldamodel.LdaModel(self.data, id2word=self.dictionary, num_topics=self.num_topics, passes=20,
+                                            alpha=1.25,
                                             eta=1.25)
         # Сохранение модели
         ldamodel.save("ldamodel_xkcd")
         return ldamodel
-
 
     def __call__(self, *args, **kwargs):
         # Импортируем данные в формте UCI Bag of Words
@@ -29,7 +30,6 @@ class DataProcess():
         else:
             self.ldamodel = self.get_model()
 
-
     def valid_row(self, text_info):
         data_list = text_info.split()
         data_list_lower = []
@@ -37,6 +37,9 @@ class DataProcess():
             lw = word.lower().replace('\n', '')
             data_list_lower.append(lw)
         return list(set(data_list_lower))
+
+    def trans_seach(self, text):
+        return ts.alibaba(text, professional_field='general')
 
     def get_word_of_theme(self):
         # Получение топовых слов по теме
@@ -71,5 +74,6 @@ class DataProcess():
                             list_of_themes.append(self.ldamodel.get_document_topics(doc)[1])
         return list_of_themes
 
-    def get_qureset(self,text_info):
+    def get_qureset(self, text_info):
         self.get_list_themes(text_info)
+        return ['123123', '12334', '3461']

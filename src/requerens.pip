@@ -40,3 +40,4 @@ uvloop==0.15.2
 watchgod==0.7
 websockets==8.1
 gensim==4.0.1
+translate-api==4.7.16

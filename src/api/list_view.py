@@ -6,9 +6,9 @@ from pydantic import BaseModel
 from fastapi.responses import JSONResponse
 from fastapi import Cookie
 from core.config import templates
-from db.model import UsersAnonModel, FilterModel, RowClickModel
+from db.model import UsersAnonModel, FilterModel, RowClickModel, RowData
 from db.run_load_data import save_data
-
+from ml.main import DataProcess
 
 router = APIRouter()
 
@@ -50,7 +50,8 @@ async def view_proxi(request: Request, trakers: Optional[str] = Cookie(None)):
 async def view_proxi(request: Request, trakers: Optional[str] = Cookie(None)):
     regionId = [int(item_value) for item_key, item_value in request.query_params._list if "regionId" in item_key and item_value !='']
     applianceId = [int(item_value) for item_key, item_value in request.query_params._list if "applianceId" in item_key and item_value !='']
-    fotex = None # recomendet row
+    id_list = DataProcess.get_qureset(text_info=request.query_params.get('smallName', "Текст"))
+    fotex =  RowData.filter(ID__in=id_list)# recomendet row
     response = templates.TemplateResponse("Nev_template.html", {"request": request,"smallName": request.query_params.get('smallName', "Текст"), "regionId": regionId, 'applianceId': applianceId, "fotex":fotex})
     if not trakers:
         await UsersAnonModel.next_user(response,request.headers)
